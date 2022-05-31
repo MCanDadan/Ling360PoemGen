@@ -187,6 +187,21 @@ def reverse_line_maker(reverse_corner):
     return reverse_ultimate_output
 
 
+def TurkishPoetGenerator():
+  """Generates a Turkish poet name"""
+
+  f=open("clean_names.txt", "r", encoding="utf-8")
+  names=f.read()
+  names=names.split(" \n")
+
+  f=open("clean_surnames.txt", "r", encoding='utf8')
+  surnames = f.read()
+  surnames=surnames.split(" \n")
+
+  poet=f"""{random.choice(names)} {random.choice(surnames)} siz degerli siirseverlere son eserini sunmaktan mutluluk duyar..."""
+  return poet
+
+
 def UPPPoem():
     ''' creates poems based on the input'''
 
@@ -201,6 +216,10 @@ def UPPPoem():
             print("Wrong schema Boo!")
             continue
         break
+     
+    poet_name = TurkishPoetGenerator()
+    poet_name_str = str(poet_name)
+    poet_name_str += " \n"
 
     if rhyme == "random":
 
@@ -357,7 +376,8 @@ def UPPPoem():
                     temp_line += word + " "
                 temp_line += "\n "
             poem = temp_line
-
+            
+    poem = poet_name_str + poem 
     return poem
 
 print(UPPPoem())
