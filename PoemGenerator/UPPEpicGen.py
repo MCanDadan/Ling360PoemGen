@@ -4,7 +4,7 @@ import random
 import re
 nltk.download('punkt')
 
-with open("epics_cleaned.txt", "r", encoding='utf8') as f:
+with open("epics_cleared.txt", "r", encoding='utf8') as f:
   corpus = f.read()
   
 def token_maker(corpus):
