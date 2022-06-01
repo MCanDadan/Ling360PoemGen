@@ -252,3 +252,5 @@ def UPPEpic():
   
   poem = poet_name_str + poem 
   return poem
+
+print(UPPEpic())
