@@ -12,7 +12,7 @@ included but the idea was later ditched.
 
 
 
-Packages used: NLTK, SciPy, Python Random Module
+Packages used: NLTK, SciPy, Python Random Module, re, string
 
 Data:
 A collection of Turkish poems and English epic books cleaned by hand and RegEx.
