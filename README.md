@@ -1,3 +1,5 @@
+Important: The code probably does not work. Need to fix it sometime.
+
 UPP - Untitled Poetry Project
 A Turkish/English poem generator 
 
